@@ -1,6 +1,6 @@
 import './App.css';
 import Items from "./JS/Items"
-import List from "./JS/list"
+// import List from "./JS/list"
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Items />
-        <List />
+        {/* <List /> */}
       </header>
     </div>
   );

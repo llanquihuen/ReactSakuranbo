@@ -11,12 +11,12 @@ const {loading, items} = useFetch(url) //!!! tiene que tener nombre que empieza 
 //   console.log(nume)
 
 const [uno, setUno] = useState("🤞")
-const [dos, setDos] = useState("🤞")
+// const [dos, setDos] = useState("🤞")
 const [end, setEnd] = useState(false)
 // const [foto, setFoto] = useState("")
 
 let ganador = ""
-let elEtiquetado ="" 
+// let elEtiquetado ="" 
 const setStates =()=>{
     setEnd(false)
  for (let i = 0; i < 20; i++) {
@@ -24,7 +24,7 @@ const setStates =()=>{
     setTimeout(()=> {
       let numef=(Math.floor(Math.random()* items.length));
       setUno(items[numef].concursante)
-      setDos(items[numef].etiquetado)
+      // setDos(items[numef].etiquetado)
     //   console.log(ganador2)
     }, i * 100);
   })(i);
@@ -34,10 +34,10 @@ const setStates =()=>{
         
         if (!loading){
             ganador = items[nume].concursante
-            elEtiquetado = items[nume].etiquetado
+            // elEtiquetado = items[nume].etiquetado
         }
         setUno(ganador)
-        setDos(elEtiquetado)
+        // setDos(elEtiquetado)
         setEnd(true)
         // const laFoto = async ()=>{
         //     const jsonF = (`https://api.instagram.com/${ganador}/?__a=1`)
@@ -84,7 +84,7 @@ end? tamanio=50 : tamanio=30
             </div>
 
             <br/>
-            <p style={{marginTop:0, marginBottom:0}}>Persona Etiquetada: {dos}</p>
+            {/* <p style={{marginTop:0, marginBottom:0}}>Persona Etiquetada: {dos}</p> */}
             <br/>
             <button style={{marginTop:0}} className="btn" onClick={setStates}>Elegir Ganador</button>
             <h2 >{end ? "¡Felicidades!" : ''}</h2>
