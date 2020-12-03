@@ -14,18 +14,83 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #ffffff; */
+  background-image: url(/src/Imagenes/5a2a2ad410e3a0.9680113615127129160692.png);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(211, 44, 100);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px;
+  /* font-style: italic; */
+  background-color: lightgray;
+  color: #282c34;
+  font-size: 60%;
+}
+.flex1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;}
+.flex2{
+  display: flex;
+  flex-direction: column;
+}
+.logoSakura{
+  max-height: 300px;
+  width: auto;
+}
+a{
+  color: rgb(211, 44, 100);
+  text-decoration: none;
+
+}
+.btn{
+  padding:10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border-color: palevioletred;
+  background-color: pink;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(253, 160, 176);
+  border-color: rgb(211, 125, 154);
+
+}
+.btn:focus {
+    outline: none
+}
+.omedeto{
+font-family: hkgo ;
+font-weight: bold;
+}
+@font-face {
+  font-family: "otsutome";
+  src: local(otsutome),url('/src/fonts/OtsutomeFont.ttf')  format('truetype');
+}
+@font-face {
+  font-family: "nagayama";
+  src: local(nagayama),url('/src/fonts/nagayama.otf')  format('opentype');
+}
+@font-face {
+  font-family: "gakuran";
+  src: local(gakuran),url('/src/fonts/gakuran.TTF')  format('truetype');
+}
+@font-face {
+  font-family: "hkgo";
+  src: local(hkgo),url('/src/fonts/hkgokukaikk.ttf')  format('opentype');
 }
 
 @keyframes App-logo-spin {
